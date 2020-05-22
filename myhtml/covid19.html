@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/main_style.css">
+    <script src="../js/home.js"></script>
+    <title>防控新冠</title>
+</head>
+<body class="bg" οnlοad="openwin()">
+    <div class="box">
+        <header>
+            <img class="logo"src="../img/logo.png" alt="">
+            <nav class="nav">
+                <ul>
+                    <li><a href="">首页</a></li>
+                    <li><a href="../myhtml/news.html">最新消息</a></li>
+                    <li><a href="../myhtml/case.html">疫情地图</a></li>
+                    <li><a href="../myhtml/knowledge.html">防疫知识</a></li>
+                    <li><a href="">热点话题</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="home">
+            <div class="home-slogan">
+                <h2>坚定信心 同舟共济</h2>
+                <h2>科学防治 精准施策</h2>
+            </div>
+            <div >
+                <img class="home-poster"src="../img/poster.png" alt="">
+            </div>
+        </section>
+        <section class="newcase card">
+            <div class="newcase-tab flex-row">
+                <h6 class="newcase-tab-item" onclick="ChangeTab(this)" style="background:rgb(255,255,255)">国内疫情</h6>
+                <h6 class="newcase-tab-item" onclick="ChangeTab(this)">国外疫情</h6>
+            </div>
+            <div class="newcase-content flex-col">
+                <ul class="flex-row">
+                    <li class="newcase-content-item flex-col">
+                        <span>累计确诊</span>
+                        <span class="data confirm">84367</span>
+                    </li>
+                    <li class="newcase-content-item flex-col">
+                        <span>现有确诊</span>
+                        <span class="data curr-confirm">1060</span>
+                    </li>
+                    <li class="newcase-content-item flex-col">
+                        <span>累计治愈</span>
+                        <span class="data cure">78664</span>
+                    </li>
+                    <li class="newcase-content-item flex-col">
+                        <span>累计死亡</span>
+                        <span class="data dead">4643</span>
+                    </li>
+                </ul>
+                <span class="end-time">统计截止2020.4.28 10:44</span>
+            </div>
+            <div class="more" >
+                <span onclick="window.open('myhtml/case.html')">更多信息</span>
+            </div>
+        </section>
+        <section class="card">
+            <h6 class="nav-title">最新消息</h6>
+            <div class="news flex-row">
+                <div class="news-item flex-col">
+                    <div class="news-time">2020年04月28日 10:24</div>
+                    <div class="news-content">
+                        <div id = "newsTitle0"
+                        class="item-title">陕西新增20例境外输入确诊病例， 均来自同一航班，落地后闭环管理 无自行活动轨迹</div>
+                        <div class="news-content-intro">
+                            <p>本土疫情：2020年4月27日8时至28日8时，陕西无新增本地确诊病例，已连续 68天无新增本地确诊病例。无新增疑似病例，已连续65天无新增疑似病例。无新增本地无症状感染者，已连续66天无新增本地无症状感染者。截止28日8时，陕西累计报告本地确诊病例245例(治愈出院242例、死亡3例），治愈率98.78%。境外输入疫情：截至28日8时，陕西累计报告境外输入新冠肺炎确诊病例61例（治愈出院11例，无死亡病例），现有50例。累计报告无症状感染者15例（解除隔离2例，转为确诊病例1例），现有12例。当前隔离密切接触者308人。今日新增：2020年4月27日8时至28日8时，陕西新增境外输入新冠肺炎确诊病例20例、无症状感染者5例，均为中国籍，4月26日乘坐莫斯科至北京航班CA910，4月27日到达第一入境点西安咸阳国际机场后入境。航班落地后，全部人员落实海关检疫、核酸检测、点对点转运、隔离诊疗、隔离医学观察等闭环管理措施，无陕西省内自行活动轨迹。
+                            </p>
+                        </div>
+                        <span class="btn-more" onclick="PopNews(this)">更多</span>
+                    </div>
+                </div>
+                <div class="news-item flex-col">
+                    <div class="news-time">2020年04月28日 10:15</div>
+                    <div class="news-content">
+                        <div id = "newsTitle1"class="item-title">黑龙江27日新增本地确诊病例3例 ，无新增境外输入确诊病例</div>
+                        <div class="news-content-intro">
+                            <p>黑龙江省卫健委28日对外发布，4月27日0至24时，黑龙江省省内新增新冠肺炎确诊病例3例。新增无症状感染者1例。无新增境外输入确诊病例。截至4月27日24时，黑龙江省累计报告本土确诊病例553例，治愈出院病例470例。现有确诊病例70例，无症状感染者31例。当日发热门诊诊疗人数811人。累计追踪到密切接触者19170人，尚有2381人正在接受医学观察。截至4月27日24时，黑龙江省累计报告境外输入确诊病例386例。现有境外输入确诊病例270例，治愈出院病例116例。追踪到境外密切接触者2100人，尚有15人正在接受医学观察。4月27日0至24时，黑龙江省无新增境外输入无症状感染者。截至4月27日24时，黑龙江省现有境外输入无症状感染者10例。
+                            </p>
+                        </div>
+                        <span class="btn-more" onclick="PopNews(this)">更多</span>
+                    </div>
+                </div>
+                <div class="news-item flex-col">
+                    <div class="news-time">2020年04月28日 09:55</div>
+                    <div class="news-content">
+                        <div id = "newsTitle2"class="item-title">4月30日起 ，武汉恢复省际客运班线</div>
+                        <div class="news-content-intro">
+                            <p>记者从省客集团获悉，从4月30日起，在汉4家客运站将恢复省际客运班线，共计39条线路，满足“五一”期间旅客出行需求。<br>省客集团董事长梁智介绍，今年“五一”假期是武汉“解封”后第一个黄金周，将迎来复工复产后的第一个客流高峰，主要以踏青流、探亲流、务工流为主，预计开行4800余班，客流量约3万人次。此次开通的省际班线主要是武汉发往宿松、金寨等39个地区，开行53班次。其中，宏基客运站10班、傅家坡客运站6班、新荣客运站28班、古田客运站9班。<br>“五一”期间（4月30日至5月5日），省客集团各客运站营业时间调整为7:30至17:30。预售票时间为7天。旅客可通过“客运96513”微信公众号、自助售票机等无接触方式购买车票，各班车售票保留最后一排座位，作为留观区。<br>梁智表示，疫情防控仍将是运输的重中之重，公司将每天对客运站场公共区域、设施、场地进行消毒处理，对运输工具实行每趟次清洗消毒，运输途中开窗通风换气。严格实行实名制登记，加派人手督促旅客佩戴口罩，全力做好亮码（扫码）进站、体温检测等工作，发热人员及时安排在留观室，第一时间移交卫生健康部门处置。</p>
+                        </div>
+                        <span class="btn-more" onclick="PopNews(this)">更多</span>
+                    </div>
+                </div>
+            </div>
+            <div class="more">
+                <span onclick="window.open('myhtml/news.html')">更多资讯</span>
+            </div>
+        </section>
+        <section class="card">
+            <h6 class="nav-title">防疫知识</h6>
+            <ul class="know flex-row">
+                <li onclick="window.open('../myhtml/knowledge.html')" class="news-item flex-col">
+                    <div class="know-pic" style="background-image: url(../img/know1.jpg);"></div>
+                    <span class="item-title">预防肺炎戴过的口罩该怎么处理？</span>
+                </li>
+                <li onclick="window.open('../myhtml/knowledge.html')" class="news-item flex-col">
+                    <div class="know-pic" style="background-image: url(../img/know2.jpeg);"></div>
+                    <span class="item-title">中国疾控中心：做到这六条预防冠状病毒</span>
+                </li>
+                <li onclick="window.open('../myhtml/knowledge.html')" class="news-item flex-col">
+                    <div class="know-pic" style="background-image: url(../img/know3.jpg);"></div>
+                    <span class="item-title">中国疾控中心：新型肺炎个人防控指南</span>
+                </li>
+                <li onclick="window.open('../myhtml/knowledge.html')" class="news-item flex-col">
+                    <div class="know-pic" style="background-image: url(../img/know4.jpg);"></div>
+                    <span class="item-title">中国疾控中心：公共场所预防指南</span>
+                </li>
+            </ul>
+            <div class="more" >
+                <span onclick="window.open('../myhtml/knowledge.html')">更多</span>
+            </div>
+        </section>
+    </div>
+<div id="popWin"class="mask">
+    <div class="news-win">
+        <div class="win-canncel">
+            <span onclick="WinOut()">x</span>
+        </div>
+        <div class="win-content">
+            <h6 id = "winTitle"class="item-title"></h6>
+            <p id="winContent"></p>
+        </div>
+    </div>
+</div>
+<footer>
+    <div></div>
+</footer>
+</body>
+</html>
