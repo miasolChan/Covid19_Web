@@ -22,8 +22,8 @@ body,html{
     height: 200%;
     font-size: 40px;
     z-index: 0;
-    /*background: #EFE9E6;*/
-    background: #fffdfd;
+    background: rgb(250, 245, 242);
+    /*background: #fffdfd;*/
 }
 .box{
     padding:0 100px;
