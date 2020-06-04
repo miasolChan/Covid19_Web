@@ -26,17 +26,21 @@ body,html{
     /*background: #fffdfd;*/
 }
 .box{
-    padding:0 100px;
+    padding:0 10%;
 }
 header{
     height: 80px;
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
 }
 .logo{
     width: 80px;
     height: 50px;
     padding: 15px 10px;
+    margin-right: 70px;
+}
+.nav{
+    margin: 0 70px;
 }
 .nav li{
     line-height: 80px;
@@ -56,6 +60,9 @@ header{
     -moz-transition :all .25s ease;
     -webkit-transition:all .25s ease;
 	transition: all .25s ease;
+}
+.user-box{
+    border: 2px solid rgb(173, 173, 173);
 }
 .home{
     padding: 0 10px;
@@ -83,6 +90,9 @@ header{
 }
 .newcase-tab{
     justify-content: center;
+}
+.newcase-tab a{
+    text-decoration: none; 
 }
 .newcase-tab-item{
     font-weight: 500;
@@ -266,4 +276,10 @@ footer div{
     height: 130px;
     background-color: rgb(208, 216, 228);
     margin-top: 140px;
+}
+.current-page{
+    color: rgb(231, 114, 133);
+    border-bottom: 2px solid;
+    padding-bottom: 5px;
+    font-weight: bold;
 }

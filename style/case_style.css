@@ -1,0 +1,28 @@
+
+#myEcharts {
+    width: 80%;
+    height: 500px;
+    margin:0 auto;
+  }
+.container{
+    width: 80%;
+    height: auto;
+    margin:30px auto;
+    background: rgb(220, 236, 250);
+    border-radius: 10px;
+    box-shadow: 0 0px 10px #99adca;
+    padding: 80px;
+}
+.map-box{
+    width: auto;
+    height: auto;
+    margin: 0px auto;
+    background-color: rgb(255, 255, 255);
+    padding: 100px  50px;
+}
+.map-title{
+    width: auto;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto 30px auto;
+}

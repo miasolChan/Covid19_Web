@@ -5,27 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/main_style.css">
     <link rel="stylesheet" href="../style/news_style.css">
-    <title>最新资讯</title>
+    <script src="../js/news.js"></script>
+    <title>新闻热点</title>
 </head>
 <body class="bg">
     <div class="box flex-col">
         <header>
             <img class="logo"src="../img/logo.png" alt="">
-            <nav class="nav">
+            <nav class="nav flex-row">
                 <ul>
                     <li><a href="../myhtml/covid19.html">首页</a></li>
-                    <li><a href="../myhtml/news.html">最新消息</a></li>
+                    <li><a class="current-page" href="../myhtml/news.html">新闻热点</a></li>
                     <li><a href="../myhtml/case.html">疫情地图</a></li>
                     <li><a href="../myhtml/knowledge.html">防疫知识</a></li>
-                    <li><a href="">热点话题</a></li>
+                    <li><a href="">话题讨论</a></li>
+                    <li><a href="">媒体公益</a></li>
                 </ul>
             </nav>
         </header>
         <img class="banner" src="../img/banner_1.jpg">
-        <div class="flex-row">
-            
+        <div class="newsbody flex-row">
+            <div class="col-bar">
+                <div class="bar-title"><h5>疫情新闻</h5></div>
+                <div>
+                    <h6 class="bar-item" onclick="classifyNews(this)" style="color: #153458;font-weight: bold;">今日热点</h6>
+                    <h6 class="bar-item" onclick="classifyNews(this)">国内新闻</h6>
+                    <h6 class="bar-item" onclick="classifyNews(this)">国际新闻</h6>
+                </div>
+
+            </div>
+            <div class="data-list flex-col">
+                <header>
+                    <h5>最新消息</h5>
+                </header>
+                <div id ="newsList">
+                    <hr>
+                    <div class="list-item">
+                    </div>
+                </div>
+            </div>   
+        </div>
+        <div class="page-change">
+            <span  class ="page-item"id = "last-page">上一页</span>
+            <span  class ="page-item"pageNum="0" >1</span>
+            <span  class ="page-item"pageNum="1">2</span>
+            <span  class ="page-item"pageNum="2">3</span>
+            <span  class ="page-item"pageNum="3">4</span>
+            <span class ="page-item"id = "next-page">下一页</span>
         </div>
     </div>
-    
 </body>
 </html>
