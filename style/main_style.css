@@ -19,14 +19,13 @@ body,html{
 }
 .bg{
     width: 100%;
-    height: 200%;
     font-size: 40px;
     z-index: 0;
     background: rgb(250, 245, 242);
     /*background: #fffdfd;*/
 }
 .box{
-    padding:0 10%;
+    padding:0 20%;
 }
 header{
     height: 80px;
@@ -37,7 +36,6 @@ header{
     width: 80px;
     height: 50px;
     padding: 15px 10px;
-    margin-right: 70px;
 }
 .nav{
     margin: 0 70px;
@@ -51,15 +49,14 @@ header{
 .nav li a{
     color: rgb(90, 79, 47);
     text-decoration: none; 
-    transition: all .25s ease;    
+    -moz-transition :all .25s ease;
+    -webkit-transition:all .25s ease;
+	transition: all .25s ease;   
 }
 .nav li a:hover {
     color: rgb(231, 114, 133);
     border-bottom: 2px solid;
     padding-bottom: 5px; 
-    -moz-transition :all .25s ease;
-    -webkit-transition:all .25s ease;
-	transition: all .25s ease;
 }
 .user-box{
     border: 2px solid rgb(173, 173, 173);

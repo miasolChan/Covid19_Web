@@ -8,7 +8,7 @@
     <script src="../js/news.js"></script>
     <title>新闻热点</title>
 </head>
-<body class="bg">
+<body class="bg" onload="initData()">
     <div class="box flex-col">
         <header>
             <img class="logo"src="../img/logo.png" alt="">
@@ -18,8 +18,7 @@
                     <li><a class="current-page" href="../myhtml/news.html">新闻热点</a></li>
                     <li><a href="../myhtml/case.html">疫情地图</a></li>
                     <li><a href="../myhtml/knowledge.html">防疫知识</a></li>
-                    <li><a href="">话题讨论</a></li>
-                    <li><a href="">媒体公益</a></li>
+                    <li><a href="../myhtml/media.html">媒体公益</a></li>
                 </ul>
             </nav>
         </header>
@@ -32,12 +31,8 @@
                     <h6 class="bar-item" onclick="classifyNews(this)">国内新闻</h6>
                     <h6 class="bar-item" onclick="classifyNews(this)">国际新闻</h6>
                 </div>
-
             </div>
             <div class="data-list flex-col">
-                <header>
-                    <h5>最新消息</h5>
-                </header>
                 <div id ="newsList">
                     <hr>
                     <div class="list-item">
@@ -54,5 +49,8 @@
             <span class ="page-item"id = "next-page">下一页</span>
         </div>
     </div>
+    <footer>
+        <div></div>
+    </footer>
 </body>
 </html>

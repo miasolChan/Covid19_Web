@@ -65,14 +65,13 @@ var forData = [
 var data = todayData;
 var aBtn = document.getElementsByClassName("page-item");
 var nowIndex = 1;
-window.onload = function () 
+function initData() 
 {
-
   // 取前四条数据初始化页面
   var newsList = document.getElementById('newsList');
   var outStr = "";
   for (var i = 0; i < 4; i++) {
-    outStr += '<div class="list-item"><div class="list-item-title">'+'<h6>'+data[i].title+'</h6>'+'</div>'+ '<p class="list-item-context">'+data[i].context+'</p> </div>'
+    outStr += '<a href="../myhtml/news_detail.html"> <div class="list-item"><div class="list-item-title">'+'<h6>'+data[i].title+'</h6>'+'</div>'+ '<p class="list-item-context">'+data[i].context+'</p> </div></a>'
   }
   newsList.innerHTML = outStr;
   
@@ -117,7 +116,7 @@ function pageChange(index){
   }
   for (var i = pageNum*4; i < pageNum*4+4; i++) { 
     //通过页数获取data中相应段的值
-    outStr += ' <div class="list-item"><div class="list-item-title">'+'<h6>'+data[i].title+'</h6>'+'</div>'+ '<p class="list-item-context">'+data[i].context+'</p> </div>'
+    outStr += '<a href="../myhtml/news_detail.html"> <div class="list-item"><div class="list-item-title">'+'<h6>'+data[i].title+'</h6>'+'</div>'+ '<p class="list-item-context">'+data[i].context+'</p> </div></a>'
   }
   newsList.innerHTML = outStr;
   nowIndex = index;
@@ -149,4 +148,30 @@ function classifyNews(barItem){
     bar[i].style.color = "#6b6b6b";
     bar[i].style.fontWeight = "normal"
   }
+}
+function initKnowData(){
+  var knowData =  [  
+    { title: "aa", context: "防疫知识"},
+    { title: "bb", context: "防疫知识"},
+    { title: "cc", context: "防疫知识"},
+    { title: "dd", context:"防疫知识"},
+  
+    { title: "ee", context: "防疫知识"},
+    { title: "ff", context: "防疫知识"},
+    { title: "gg", context: "防疫知识"},
+    { title: "hh", context: "防疫知识"},
+  
+    { title: "ii", context: "防疫知识"},
+    { title: "jj", context: "防疫知识"},
+    { title: "kk", context: "防疫知识"},
+    { title: "ll", context: "防疫知识"},
+  
+    { title: "mm", context: "防疫知识"},
+    { title: "nn", context: "防疫知识"},
+    { title: "oo", context: "防疫知识"},
+    { title: "pp", context: "防疫知识"},
+  ];
+  data = knowData
+  initData()
+  console.log("防疫知识内容更新")
 }

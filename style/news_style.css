@@ -14,7 +14,7 @@
     text-align: center;
 }
 .data-list{
-    box-shadow: 0 0px 35px #c3c3c4;
+    /* box-shadow: 0 0px 35px #c3c3c4; */
     width: 75%;
     height: auto;
     background: #ffffff;
@@ -82,4 +82,8 @@ span{
     -moz-transition :all .3s linear;
     -webkit-transition:all .3s linear;
 	transition: all .3s linear;
+}
+#newsList a{
+    color: rgb(48, 48, 48);
+    text-decoration: none;
 }

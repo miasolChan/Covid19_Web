@@ -1,5 +1,39 @@
-.banner{
-    width: auto;
-    height: auto;
-    padding: 10px auto;
+.slide-bg{
+    width: 100%;
+    height: 500px;
+    background-color: #eeeeee;
+    margin-bottom: 30px;
+}
+.slide-box{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+.slide-box img{
+    width: 90%;
+    height: 100%;
+}
+.slide-img:hover{
+    
+}
+.arrow{
+    cursor: pointer;
+    width:5%;
+    height: 50px;
+    margin: auto;
+    -webkit-transition:all .25s ease;
+	transition: all .25s ease;
+
+}
+.arrow:hover{
+    background-color: #a7a7a7;
+    
+}
+.arrow img:hover{
+    color: aliceblue;
+
+}
+.slider{
+    display: inline;
 }

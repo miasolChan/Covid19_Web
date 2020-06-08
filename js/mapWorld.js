@@ -221,7 +221,7 @@ window.onload = function(){
     
         option = {
             title: {
-                text: '全球疫情图:现存',
+                text: '全球疫情：现存',
                 left: 'center'
             },
             tooltip: {
@@ -272,8 +272,11 @@ window.onload = function(){
                     },
                     data: [
                         {
-                            name:
-                        },
+                            name:'中国',
+                            value:1000
+                        },{
+
+                        }
                         
                     ]
                 }
@@ -281,44 +284,6 @@ window.onload = function(){
         };
     
     //获取数据
-    function getData() {
-        $.ajax({
-            url: "https://view.inews.qq.com/g2/getOnsInfo?name=disease_h5",
-            dataType: "jsonp",
-            success: function (data) {
-                var res = data.data || "";
-                res = JSON.parse(res);
-                var newArr = [];
-                if (res) {
-                    for (var i = 0; i < res.areaTree.length; i++) {
-                        var json = {
-                            name: res.areaTree[i].name,
-                            value: res.areaTree[i].total.confirm - res.areaTree[i].total.dead - res.areaTree[i].total.heal,
-                        }
-                        newArr.push(json)
-                    }
-                    //使用指定的配置项和数据显示图表
-                    myChart.setOption({
-                        series: [
-                            {
-                                name: '现存数',
-                                type: 'map',
-                                mapType: 'world',
-                                roam: false,
-                                label: {
-                                    fontSize: 8,
-                                    show: false,
-                                    color: 'rgb(0, 0, 0)'
-                                },
-                                data: newArr
-                            }
-                        ]
-                    });
-    
-                }
-            }
-        })
-    }
     //初始化echarts实例
     var myEcharts = document.getElementById('myEcharts');
     var myChart = echarts.init(myEcharts);

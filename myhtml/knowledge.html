@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style/main_style.css">
     <link rel="stylesheet" href="../style/konwledge_style.css">
+    <link rel="stylesheet" href="../style/main_style.css">
+    <link rel="stylesheet" href="../style/news_style.css">
+    <script src="../js/news.js"></script>
+    <script src="../js/konw.js"></script>
     <title>防疫知识</title>
 </head>
-<body class="bg">
+<body class="bg" onload="initKnowData()">
     <div class="box flex-col">
         <header>
             <img class="logo"src="../img/logo.png" alt="">
@@ -17,11 +20,44 @@
                     <li><a href="../myhtml/news.html">新闻热点</a></li>
                     <li><a href="../myhtml/case.html">疫情地图</a></li>
                     <li><a href="../myhtml/knowledge.html">防疫知识</a></li>
-                    <li><a href="">话题讨论</a></li>
-                    <li><a href="">媒体公益</a></li>
+                    <li><a href="../myhtml/media.html">媒体公益</a></li>
                 </ul>
             </nav>
         </header>
+        <div class="slide-bg">
+            <div class="slide-box flex-row" >
+                <div class="arrow" id="left">
+                    <img id="next"src="../img/preview.png" alt="">
+                </div>
+                <img id="slide-img" onload = "Slider()" imgNum="0" src="../img/slide_0.jpg" alt="">
+                <div class="arrow" id="right">
+                    <img id="next"src="../img/next.png" alt="">
+                </div>
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        <div class="newsbody flex-row konw-content">
+            <div class="data-list flex-col">
+                <div id ="newsList">
+                    <hr>
+                    <div class="list-item">
+                    </div>
+                </div>
+            </div>   
+        </div>
+        <div class="page-change">
+            <span  class ="page-item"id = "last-page">上一页</span>
+            <span  class ="page-item"pageNum="0" >1</span>
+            <span  class ="page-item"pageNum="1">2</span>
+            <span  class ="page-item"pageNum="2">3</span>
+            <span  class ="page-item"pageNum="3">4</span>
+            <span class ="page-item"id = "next-page">下一页</span>
+        </div>
     </div>
+    <footer>
+        <div></div>
+    </footer>
 </body>
 </html>
