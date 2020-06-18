@@ -37,3 +37,7 @@
 .slider{
     display: inline;
 }
+#konwList a{
+    color: rgb(48, 48, 48);
+    text-decoration: none;
+}

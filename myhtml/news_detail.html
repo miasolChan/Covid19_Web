@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/main_style.css">
     <link rel="stylesheet" href="../style/detail_style.css">
+    <script src="../js/headFixed.js"></script>
     <script src="../js/detail.js"></script>
     <title>详细新闻</title>
 </head>
-<body class="bg flex-col" onload="InterP()">
-    <header class="box">
-        <img class="logo"src="../img/logo.png" alt="">
-        <nav class="nav flex-row">
-            <ul>
+<body class="bg flex-col" onload="InterP()"onscroll="navScroll()">
+    <header class="box"id="header">
+        <nav class="flex-row" id="navTag">
+            <img class="logo"src="../img/logo.png" alt="">
+            <ul class="nav" >
                 <li><a href="../myhtml/covid19.html">首页</a></li>
                 <li><a class="current-page" href="../myhtml/news.html">新闻热点</a></li>
                 <li><a href="../myhtml/case.html">疫情地图</a></li>

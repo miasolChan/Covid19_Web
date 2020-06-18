@@ -230,7 +230,7 @@ window.onload = function(){
             visualMap: {
                 type: 'piecewise',
                 pieces: [
-                    { min: 10000, max: 1000000, label: '>=10000', color: '#550101' },
+                    { min: 10000, max: 1000000000, label: '>=10000', color: '#550101' },
                     { min: 1000, max: 9999, label: '1000-9999', color: '#a92919' },
                     { min: 500, max: 999, label: '500-999', color: '#af4e41' },
                     { min: 100, max: 499, label: '100-499', color: '#ee7263' },
@@ -272,10 +272,47 @@ window.onload = function(){
                     },
                     data: [
                         {
-                            name:'中国',
-                            value:1000
+                            name:'美国',
+                            value:1142820
                         },{
+                            name:'巴西',
+                            value:355087
+                        },{
+                            name:'俄罗斯',
+                            value:234754
+                        }
+                        ,{
+                            name:'英国',
+                            value:247097
+                        }
+                        ,{
+                            name:'西班牙',
+                            value:65266
+                        }
+                        ,{
+                            name:'印度',
+                            value:138069
+                        }
+                        ,{
+                            name:'意大利',
+                            value:32710
+                        }
+                        ,{
+                            name:'墨西哥',
+                            value:19897
+                        }
+                        ,{
+                            name:'中国',
+                            value:119
+                        }
 
+                        ,{
+                            name:'加拿大',
+                            value:32524
+                        }
+                        ,{
+                            name:'阿根廷',
+                            value:17261
                         }
                         
                     ]

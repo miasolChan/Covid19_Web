@@ -1,24 +1,24 @@
 // 自定义数据 实际开发中 数据是从后台获取
 var localData =  [  
-  { title: "aa", context: "国内"},
-  { title: "bb", context: "国内"},
-  { title: "cc", context: "国内"},
-  { title: "dd", context:"国内"},
+  { title: "钟南山：新冠疫苗最早秋天或年底可用，6种疫苗在临床试验中", context: "环球时报新媒体"},
+  { title: "驳斥中国隐瞒疫情论，国家卫健委主任回顾疫情初期基本过程", context: "澎湃新闻"},
+  { title: "疯狂口罩跌下暴富“神坛”：有生产商从日赚15万到面临亏损百万", context: "澎湃新闻"},
+  { title: "抗击疫情，我国百余所高校做了什么？", context:"科技日报"},
 
-  { title: "ee", context: "国内"},
-  { title: "ff", context: "国内"},
-  { title: "gg", context: "国内"},
-  { title: "hh", context: "国内"},
+  { title: "马云唱黄梅戏，与援鄂医护共唱夫妻双双把家还", context: "老板联播"},
+  { title: "抗击疫情，我国百余所高校做了什么？", context: "国内"},
+  { title: "新冠疫苗优先为谁接种？还要继续戴口罩吗？权威回应", context: "央视新闻"},
+  { title: "国务院新闻办发布《抗击新冠肺炎疫情的中国行动》白皮书", context: "新华社"},
 
-  { title: "ii", context: "国内"},
-  { title: "jj", context: "国内"},
-  { title: "kk", context: "国内"},
-  { title: "ll", context: "国内"},
+  { title: "疫情常态化,体育教学怎么保证质量?", context: "新浪新闻"},
+  { title: "抗击新冠肺炎疫情的中国行动", context: "中国共产党新闻网"},
+  { title: "刘晓明大使参加英国天空新闻台《疫情后我们的新世界》特别节目", context: "中国日报网"},
+  { title: "泰安市贸促会:专业消杀进校园 助力复学防疫情", context: "东方泰山"},
 
-  { title: "mm", context: "国内"},
-  { title: "nn", context: "国内"},
-  { title: "oo", context: "国内"},
-  { title: "pp", context: "国内"},
+  { title: "广东举行疫情防控第六十二场新闻发布会", context: "国务院新闻办公室"},
+  { title: "疫情改变租房需求内核", context: "瓯网"},
+  { title: "天津举行新型冠状病毒肺炎疫情防控工作系列新闻发布会", context: "国务院新闻办公室"},
+  { title: "【变奏曲】疫情过去之后 他们的生活转向何处?", context: "央视网"},
 ];
 var todayData = [  
   { title: "aa", context: "今日"},
@@ -42,36 +42,39 @@ var todayData = [
   { title: "pp", context: "今日"},
 ]; 
 var forData = [  
-  { title: "aa", context: "国外"},
-  { title: "bb", context: "国外"},
-  { title: "cc", context: "国外"},
-  { title: "dd", context: "国外"},
+  { title: "巴西感染人数在猛涨，大部分疫情数据被删除，特朗普给“巴西特朗普”补一刀", context: "环球网"},
+  { title: "抗议不断、确诊病例近两百万 特朗普宣称“战胜”新冠肺炎疫情", context: "腾讯新闻"},
+  { title: "抗议叠加疫情，超80％美民众认为美国局势已失控，63％担心感染", context: "国际联联看"},
+  { title: "杜兰特回忆确诊感染新冠病毒：当时既震惊又好奇 我表现得非常棒", context: "篮球记者杨克己"},
 
-  { title: "ee", context: "国外"},
-  { title: "ff", context: "国外"},
-  { title: "gg", context: "国外"},
-  { title: "hh", context: "国外"},
+  { title: "新冠病毒11月已在欧洲出现！博士：继续往前查，必须找到零号病人", context: "排头军事"},
+  { title: "美军镇压平民加剧疫情？确诊人数直线上升，不顾白宫命令撤兵", context: "大国鉴"},
+  { title: "在抗疫＋抗议中，拜登和特朗普的选战打响了", context: "新华社新闻"},
+  { title: "印度感染人数超过意大利，军队不顾疫情频繁调动，或成为病毒媒介", context: "虹摄库尔斯克"},
 
-  { title: "ii", context: "国外"},
-  { title: "jj", context: "国外"},
-  { title: "kk", context: "国外"},
-  { title: "ll", context: "国外"},
+  { title: "张文宏分析世界疫情形势：东亚地区疫情控制最优，美国局势不明朗", context: "腾讯新闻"},
+  { title: "印度感染人数超过意大利，军队不顾疫情频繁调动，或成为病毒媒介", context: "虹摄库尔斯克"},
+  { title: "全球新冠死亡病例超40万例 纽约新冠病毒源头被发现 ", context: "光明网"},
+  { title: "日本新冠死亡病例3个月来首次单日零新增", context: "中国青年网"},
 
-  { title: "mm", context: "国外"},
-  { title: "nn", context: "国外"},
-  { title: "oo", context: "国外"},
-  { title: "pp", context: "国外"},
+  { title: "新闻分析:疫情之下,德甲版权能否卖出高价?", context: "新华社"},
+  { title: "第二波疫情警钟已响,但一些国家却现神操作,巴西和印度风险大", context: "新浪"},
+  { title: "美多州抗议活动加剧新冠肺炎疫情传播", context: "福州新闻网"},
+  { title: "示威、疫情交织 八成受访美国人认为国家已失控", context: "福州新闻网"},
 ]; 
 var data = todayData;
 var aBtn = document.getElementsByClassName("page-item");
 var nowIndex = 1;
+var dataType=0;
 function initData() 
 {
   // 取前四条数据初始化页面
   var newsList = document.getElementById('newsList');
   var outStr = "";
   for (var i = 0; i < 4; i++) {
-    outStr += '<a href="../myhtml/news_detail.html"> <div class="list-item"><div class="list-item-title">'+'<h6>'+data[i].title+'</h6>'+'</div>'+ '<p class="list-item-context">'+data[i].context+'</p> </div></a>'
+    if(i%2==0) data = forData;
+    else data = localData;
+    outStr += '<a href="../myhtml/news_detail.html"> <div class="list-item"><div class="list-item-title">'+'<h6>'+data[i].title+'</h6>'+'</div>'+ '<p class="list-item-context">'+'来源：'+data[i].context+'</p> </div></a>'
   }
   newsList.innerHTML = outStr;
   
@@ -115,8 +118,12 @@ function pageChange(index){
     return;
   }
   for (var i = pageNum*4; i < pageNum*4+4; i++) { 
+    if(dataType==0){
+      if(i%2==0) data = forData;
+      else data = localData;
+    }
     //通过页数获取data中相应段的值
-    outStr += '<a href="../myhtml/news_detail.html"> <div class="list-item"><div class="list-item-title">'+'<h6>'+data[i].title+'</h6>'+'</div>'+ '<p class="list-item-context">'+data[i].context+'</p> </div></a>'
+    outStr += '<a href="../myhtml/news_detail.html"> <div class="list-item"><div class="list-item-title">'+'<h6>'+data[i].title+'</h6>'+'</div>'+ '<p class="list-item-context">'+'来源：'+data[i].context+'</p> </div></a>'
   }
   newsList.innerHTML = outStr;
   nowIndex = index;
@@ -130,12 +137,15 @@ function classifyNews(barItem){
   //切换分类
   if(barItem==bar[0]){//今日
     data = todayData;
+    dataType=0;
   }
   if(barItem==bar[1]){//国内
     data = localData;
+    dataType =1;
   }
   if(barItem==bar[2]){//国际
     data = forData;
+    dataType = 2;
   }
   pageChange(1);
   //切换颜色
@@ -149,29 +159,5 @@ function classifyNews(barItem){
     bar[i].style.fontWeight = "normal"
   }
 }
-function initKnowData(){
-  var knowData =  [  
-    { title: "aa", context: "防疫知识"},
-    { title: "bb", context: "防疫知识"},
-    { title: "cc", context: "防疫知识"},
-    { title: "dd", context:"防疫知识"},
+
   
-    { title: "ee", context: "防疫知识"},
-    { title: "ff", context: "防疫知识"},
-    { title: "gg", context: "防疫知识"},
-    { title: "hh", context: "防疫知识"},
-  
-    { title: "ii", context: "防疫知识"},
-    { title: "jj", context: "防疫知识"},
-    { title: "kk", context: "防疫知识"},
-    { title: "ll", context: "防疫知识"},
-  
-    { title: "mm", context: "防疫知识"},
-    { title: "nn", context: "防疫知识"},
-    { title: "oo", context: "防疫知识"},
-    { title: "pp", context: "防疫知识"},
-  ];
-  data = knowData
-  initData()
-  console.log("防疫知识内容更新")
-}

@@ -14,16 +14,16 @@ function ChangeTab(caseTab){
     //console.log(caseTab.textContent)
     //设置人数
     if(caseTab==tabBro[0]){
-        dataArr[0].innerText=84367;
-        dataArr[1].innerText=1060;
-        dataArr[2].innerText=78664;
-        dataArr[3].innerText=4643;
+        dataArr[0].innerText=84652;
+        dataArr[1].innerText=119;
+        dataArr[2].innerText=79888;
+        dataArr[3].innerText=4645;
     }
     else{
-        dataArr[0].innerText=2986498;
-        dataArr[1].innerText=1919735;
-        dataArr[2].innerText=859928;
-        dataArr[3].innerText=206835;
+        dataArr[0].innerText=7392331;
+        dataArr[1].innerText=3312721;
+        dataArr[2].innerText=3664764;
+        dataArr[3].innerText=414846;
     }
 }
 //弹出详细新闻窗
